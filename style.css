@@ -1,0 +1,804 @@
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main webpage styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0618;
+    color: white;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #140b29;
+}
+
+/* Festival logo */
+header h1 {
+    font-size: 28px;
+    color: #c084fc;
+}
+
+/* Header paragraph */
+header p {
+    font-size: 14px;
+    color: #d1c5e9;
+}
+
+/* Main hero section */
+main section {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Main heading */
+main h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+/* Description */
+main p {
+    font-size: 18px;
+    color: #c4b5fd;
+    margin-bottom: 30px;
+}
+
+/* Button */
+button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #9333ea, #ec4899);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    min-height: 90vh;
+    background:
+        radial-gradient(ellipse at 50% 40%, #482078 0%, #190d30 45%, #0b0618 100%);
+    overflow: hidden;
+}
+
+/* Small introductory text */
+
+.hero-tag {
+    color: #e879f9;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+/* Main heading */
+
+.hero h2 {
+    font-size: clamp(55px, 9vw, 110px);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+.hero h2 span {
+    background: linear-gradient(90deg, #c084fc, #f0abfc, #f472b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Description */
+
+.hero-description {
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-buttons button {
+    transition: 0.3s ease;
+}
+
+.hero-buttons button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px #9333ea66;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid #c084fc;
+}
+
+/* Event information */
+
+.event-info {
+    display: flex;
+    gap: 80px;
+    margin-top: 75px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-info h3 {
+    font-size: 30px;
+    color: #e9a8ff;
+}
+
+.event-info p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+/* NAVIGATION BAR */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: rgba(15, 8, 30, 0.95);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* LOGO */
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.logo span {
+    color: #d946ef;
+}
+
+/* NAVIGATION LINKS */
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #c4b5fd;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #f0abfc;
+}
+
+/* REGISTER BUTTON */
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #9333ea, #db2777);
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px #9333ea66;
+}
+/* ABOUT SECTION */
+
+.about {
+    padding: 100px 8%;
+    background: #10091f;
+    text-align: center;
+}
+
+/* Section label */
+
+.section-tag {
+    color: #e879f9;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+/* Section heading */
+
+.about h2 {
+    font-size: clamp(30px, 5vw, 50px);
+    margin-bottom: 25px;
+}
+
+/* Description */
+
+.about-description {
+    max-width: 650px;
+    margin: 0 auto 60px;
+    color: #b9a9d5;
+    line-height: 1.8;
+}
+
+/* Cards container */
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual cards */
+
+.about-card {
+    background: linear-gradient(145deg, #211337, #160d27);
+    border: 1px solid #49315f;
+    padding: 40px 25px;
+    border-radius: 18px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+    border-color: #c084fc;
+    box-shadow: 0 10px 30px #9333ea22;
+}
+
+.about-card h3 {
+    color: #e9a8ff;
+    font-size: 21px;
+    margin-bottom: 18px;
+}
+
+.about-card p {
+    color: #b9a9d5;
+    line-height: 1.7;
+}
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .event-info {
+        gap: 35px;
+    }
+
+}
+/* EVENTS SECTION */
+
+.events {
+    padding: 100px 8%;
+    background: #0b0618;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: clamp(32px, 5vw, 50px);
+    margin-bottom: 20px;
+}
+
+.events-description {
+    color: #b9a9d5;
+    margin-bottom: 55px;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.event-card {
+    background: linear-gradient(135deg, #241338, #140b25);
+    border: 1px solid #49315f;
+    border-radius: 20px;
+    padding: 35px;
+    text-align: left;
+    transition: 0.4s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    border-color: #d946ef;
+    box-shadow: 0 10px 35px #9333ea30;
+}
+
+.event-number {
+    color: #e879f9;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.event-card h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    color: #b9a9d5;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.event-card span {
+    color: #e879f9;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* SCHEDULE SECTION */
+
+.schedule {
+    padding: 100px 8%;
+    background: #10091f;
+    text-align: center;
+}
+
+.schedule h2 {
+    font-size: clamp(32px, 5vw, 50px);
+    margin-bottom: 20px;
+}
+
+.schedule-description {
+    color: #b9a9d5;
+    margin-bottom: 55px;
+}
+
+.schedule-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 18px;
+    background: #1c102d;
+    border: 1px solid #49315f;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.schedule-item:hover {
+    border-color: #d946ef;
+    transform: translateX(8px);
+}
+
+.schedule-day {
+    color: #e879f9;
+    font-size: 13px;
+    font-weight: bold;
+    min-width: 65px;
+}
+
+.schedule-details {
+    flex: 1;
+}
+
+.schedule-details h3 {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.schedule-details p {
+    color: #b9a9d5;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.schedule-time {
+    color: #e9a8ff;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    .schedule-item {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 22px;
+    }
+
+    .schedule-details {
+        flex-basis: 100%;
+    }
+
+}
+/* PERFORMERS SECTION */
+
+.performers {
+    padding: 100px 8%;
+    background: #0b0618;
+    text-align: center;
+}
+
+.performers h2,
+.venue h2 {
+    font-size: clamp(32px, 5vw, 50px);
+    margin-bottom: 20px;
+}
+
+.performer-description {
+    color: #b9a9d5;
+    margin-bottom: 50px;
+}
+
+.performer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.performer-card {
+    padding: 40px 25px;
+    background: #1c102d;
+    border: 1px solid #49315f;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.performer-card:hover {
+    transform: translateY(-8px);
+    border-color: #d946ef;
+}
+
+.performer-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.performer-card h3 {
+    color: #e9a8ff;
+    margin-bottom: 15px;
+}
+
+.performer-card p {
+    color: #b9a9d5;
+    line-height: 1.7;
+}
+
+
+/* VENUE SECTION */
+
+.venue {
+    padding: 100px 8%;
+    background: #10091f;
+    text-align: center;
+}
+
+.venue-box {
+    max-width: 1000px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: left;
+}
+
+.venue-content,
+.venue-visual {
+    padding: 40px;
+    border-radius: 20px;
+    background: #211337;
+    border: 1px solid #49315f;
+}
+
+.venue-content h3 {
+    font-size: 28px;
+    color: #e9a8ff;
+    margin-bottom: 20px;
+}
+
+.venue-content p {
+    color: #c4b5d5;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.venue-visual {
+    background: radial-gradient(circle at center, #65318c, #211337);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 250px;
+}
+
+.venue-visual span {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.venue-visual p {
+    color: #d8c6ec;
+    margin-top: 12px;
+}
+
+.venue-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #9333ea, #db2777);
+    padding: 13px 25px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .performer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .venue-box {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* REGISTRATION SECTION */
+
+.registration {
+    padding: 100px 8%;
+    text-align: center;
+    background: radial-gradient(circle, #32144d, #0b0618);
+}
+
+.registration h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    margin-bottom: 20px;
+}
+
+.registration-description {
+    color: #c4b5d5;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+.registration-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    padding: 17px;
+    border: 1px solid #654581;
+    border-radius: 10px;
+    background: #1c102d;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+    border-color: #d946ef;
+}
+
+.registration-form input::placeholder {
+    color: #b9a9d5;
+}
+
+.registration-form button {
+    padding: 17px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.registration-form button:hover {
+    transform: translateY(-4px);
+}
+/* FOOTER */
+
+.footer {
+    padding: 55px 8% 25px;
+    background: #080411;
+    border-top: 1px solid #49315f;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.footer h2 {
+    color: white;
+    font-size: 30px;
+}
+
+.footer h2 span {
+    color: #d946ef;
+}
+
+.footer-content p {
+    color: #b9a9d5;
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #c4b5d5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #e879f9;
+}
+
+.footer-bottom {
+    border-top: 1px solid #352344;
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: #8e7ba5;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+button,
+a {
+    transition: all 0.3s ease;
+}
+/* FINAL MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 55px;
+    }
+
+    .event-info {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .about-cards,
+    .event-container,
+    .performer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .venue-box {
+        grid-template-columns: 1fr;
+    }
+
+    .registration-form {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .section-tag {
+        font-size: 11px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+}
